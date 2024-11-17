@@ -8,7 +8,9 @@ import 'package:grocery_app/utils/app_text_style.dart';
 import 'package:grocery_app/utils/image_path.dart';
 
 import 'package:grocery_app/utils/media_query.dart';
+import 'package:grocery_app/view/home_screen.dart/widgets/category_grid.dart';
 
+import 'widgets/buil_offer.dart';
 import 'widgets/build_location.dart';
 import 'widgets/build_search.dart';
 
@@ -17,7 +19,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List list = [0, 1, 2, 7];
     final sh = MediaQueryUtils.getHeightInPercentage(context, 10);
     final sw = MediaQueryUtils.getHeightInPercentage(context, 10);
     return Scaffold(
@@ -56,33 +57,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const Text("what would you like to do today?",
                 style: AppTextStyle.heading),
-            Expanded(
-              child: GridView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  itemCount: 8,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 4,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10),
-                  itemBuilder: (context, index) => Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(sw * .05),
-                            color: AppColors.backgroundColor,
-                            boxShadow: const [AppDecoration.boxShadow]),
-                        width: sw,
-                        height: sw,
-                        child: Center(
-                            child:
-                                Stack(alignment: Alignment.topRight, children: [
-                          Container(
-                            color: AppColors.offerBox,
-                            height: 10,
-                            width: sw * .5,
-                          ),
-                          SvgPicture.asset(CategoryModel.categoryList[index]),
-                        ])),
-                      )),
-            ),
+            categoryGrid(sw),
           ],
         ),
       ),

@@ -11,4 +11,14 @@ class CategoryModel {
     ImagePath.scale,
     ImagePath.store,
   ];
+  static const List<String> categoryText = [
+    "Food Delivery",
+    "Medicines",
+    "Pet\n supplies",
+    "Gifts",
+    "Meat",
+    "Cosmetic",
+    "Stationery",
+    "Stores"
+  ];
 }

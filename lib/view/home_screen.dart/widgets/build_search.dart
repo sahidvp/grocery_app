@@ -21,7 +21,7 @@ Container buildSearch(double sw) {
           border: InputBorder.none,
           hintText: "Search for products/stores",
           hintStyle: AppTextStyle.hintText,
-          contentPadding: EdgeInsets.only(left: sw * .15, top: sw * .15)),
+          contentPadding: EdgeInsets.only(left: sw * .1, top: sw * .15)),
     ),
   );
 }

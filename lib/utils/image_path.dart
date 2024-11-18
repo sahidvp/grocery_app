@@ -21,4 +21,5 @@ class ImagePath {
   static const String order = "assets/icons/Myorder.svg";
   static const String profile = "assets/icons/profile.svg";
   static const String giftOne = "assets/icons/giftOne.svg";
+  static const String backArrow = "assets/icons/backArow.svg";
 }

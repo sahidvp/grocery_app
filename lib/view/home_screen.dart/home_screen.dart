@@ -10,6 +10,7 @@ import 'package:grocery_app/view/home_screen.dart/widgets/build_more.dart';
 import 'package:grocery_app/view/home_screen.dart/widgets/category_grid.dart';
 import 'package:grocery_app/view/home_screen.dart/widgets/craze_deals.dart';
 import 'package:grocery_app/view/home_screen.dart/widgets/earn_refer.dart';
+import 'package:grocery_app/view/notification_screen.dart/notification_screen.dart';
 import 'widgets/build_discount.dart';
 import 'widgets/build_location.dart';
 import 'widgets/build_search.dart';
@@ -45,7 +46,10 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(
                           height: sw * .35,
                           width: sw * .35,
-                          child: SvgPicture.asset(ImagePath.bellIcon)),
+                          child: GestureDetector(
+                              onTap: () =>
+                                  Navigator.pushNamed(context, "/nofification"),
+                              child: SvgPicture.asset(ImagePath.bellIcon))),
                       SizedBox(
                           height: sw * .35,
                           width: sw * .35,
@@ -88,7 +92,7 @@ class HomeScreen extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         mainTitle(title),
-        Text(
+        const Text(
           "See all",
           style: AppTextStyle.seeAll,
         )

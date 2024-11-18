@@ -15,4 +15,9 @@ class AppTextStyle {
       fontFamily: "Poppins");
   static const TextStyle subHeading =
       TextStyle(fontSize: 13, fontWeight: FontWeight.w500);
+  static const TextStyle dealsText = TextStyle(
+      color: AppColors.backgroundColor,
+      fontWeight: FontWeight.w600,
+      fontSize: 23,
+      fontFamily: "Poppins");
 }

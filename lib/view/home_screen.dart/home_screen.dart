@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grocery_app/utils/app_colors.dart';
+import 'package:grocery_app/utils/app_text_style.dart';
 import 'package:grocery_app/utils/image_path.dart';
 import 'package:grocery_app/utils/media_query.dart';
 import 'package:grocery_app/view/home_screen.dart/widgets/build_main_title.dart';
 import 'package:grocery_app/view/home_screen.dart/widgets/build_more.dart';
 import 'package:grocery_app/view/home_screen.dart/widgets/category_grid.dart';
-import 'package:grocery_app/view/home_screen.dart/widgets/trending_item.dart';
+import 'package:grocery_app/view/home_screen.dart/widgets/craze_deals.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 import 'widgets/build_discount.dart';
 import 'widgets/build_location.dart';
 import 'widgets/build_search.dart';
+import 'widgets/trending_body.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -60,18 +64,10 @@ class HomeScreen extends StatelessWidget {
                 height: sw * .30,
               ),
               mainTitle("Trending"),
-              SizedBox(
-                height: sw * 3,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: const [
-                    TrendingItem(),
-                    TrendingItem(),
-                  ],
-                ),
-              ),
+              trendingBody(sw),
               SizedBox(height: sw * .20),
               mainTitle("Craze deals"),
+              CrazeDeals(sw: sw)
             ],
           ),
         ),

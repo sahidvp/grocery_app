@@ -15,4 +15,5 @@ class ImagePath {
   static const String discountItem = "assets/images/discoutItem.png";
   static const String iceCream = "assets/images/iceCream.png";
   static const String star = "assets/icons/star.svg";
+  static const String vegetable = "assets/images/vegetable1.png";
 }

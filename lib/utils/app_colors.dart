@@ -13,4 +13,7 @@ class AppColors {
   static const Color shadow = Color.fromRGBO(50, 50, 50, 0.150);
   static const Color offerBox = Color.fromRGBO(156, 55, 236, 1);
   static const Color checkNOw = Color.fromRGBO(255, 137, 24, 1);
+  static const Color crazeDeals = Color.fromRGBO(38, 38, 38, 1);
+  static const Color exploreColor=Color.fromRGBO(234, 126, 0, 1);
 }
+

@@ -26,7 +26,7 @@ Container buildDiscount(double sw, double sh) {
               ),
               Container(
                 padding: EdgeInsets.symmetric(
-                    horizontal: sw * .6, vertical: sw * .1),
+                    horizontal: sw * .5, vertical: sw * .07),
                 decoration: BoxDecoration(
                     color: AppColors.checkNOw,
                     borderRadius: BorderRadius.circular(sw * .05)),
@@ -51,13 +51,13 @@ Container buildDiscount(double sw, double sh) {
   );
 }
 
- SizedBox discountBuilder(double sh, double sw) {
-    return SizedBox(
-                height: sh * 3,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 2,
-                    itemBuilder: (context, index) => Padding(
-                        padding: EdgeInsets.only(right: sw * .1),
-                        child: buildDiscount(sw, sh))));
-  }
+SizedBox discountBuilder(double sh, double sw) {
+  return SizedBox(
+      height: sh * 2.5,
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: 2,
+          itemBuilder: (context, index) => Padding(
+              padding: EdgeInsets.only(right: sw * .1),
+              child: buildDiscount(sw, sh))));
+}

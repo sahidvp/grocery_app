@@ -8,12 +8,12 @@ import 'buil_offer.dart';
 
 categoryGrid(double sw) {
   return SizedBox(
-    height: sw * 3.5,
+    height: sw * 3.2,
     width: sw * 7,
     child: GridView.builder(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         itemCount: 8,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             childAspectRatio: 0.7,
             crossAxisCount: 4,
             crossAxisSpacing: 10,

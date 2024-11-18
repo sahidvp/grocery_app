@@ -20,4 +20,6 @@ class AppTextStyle {
       fontWeight: FontWeight.w600,
       fontSize: 23,
       fontFamily: "Poppins");
+  static const TextStyle seeAll = TextStyle(
+      color: AppColors.primaryColor, fontWeight: FontWeight.w700, fontSize: 16);
 }

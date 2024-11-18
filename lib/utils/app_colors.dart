@@ -15,5 +15,6 @@ class AppColors {
   static const Color checkNOw = Color.fromRGBO(255, 137, 24, 1);
   static const Color crazeDeals = Color.fromRGBO(38, 38, 38, 1);
   static const Color exploreColor=Color.fromRGBO(234, 126, 0, 1);
+  static const Color referEarn=Color.fromRGBO(41, 209, 119, 1);
 }
 

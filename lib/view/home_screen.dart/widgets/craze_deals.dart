@@ -43,8 +43,7 @@ class CrazeDeals extends StatelessWidget {
                       ),
                       Positioned(
                         top: sw * 0.35, // Adjust vertical positioning
-                        left:
-                            sw * 0.3, // Adjust horizontal positioning
+                        left: sw * 0.3, // Adjust horizontal positioning
                         child: const Text(
                             "Customer favourite \ntop supermarkets", // Your text
                             style: AppTextStyle.dealsText),

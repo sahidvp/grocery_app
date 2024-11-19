@@ -22,4 +22,7 @@ class AppTextStyle {
       fontFamily: "Poppins");
   static const TextStyle seeAll = TextStyle(
       color: AppColors.primaryColor, fontWeight: FontWeight.w700, fontSize: 16);
+  static const TextStyle listTitle = TextStyle(
+    fontWeight: FontWeight.w700,
+  );
 }

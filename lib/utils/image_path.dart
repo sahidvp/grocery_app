@@ -22,4 +22,5 @@ class ImagePath {
   static const String profile = "assets/icons/profile.svg";
   static const String giftOne = "assets/icons/giftOne.svg";
   static const String backArrow = "assets/icons/backArow.svg";
+  static const String orderAssigned = "assets/icons/order_assigned.svg";
 }
